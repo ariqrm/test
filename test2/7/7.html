@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font: 400 15px/1.8 Lato, sans-serif;
+            color: #777;
+        }
+
+        .container {
+            padding: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">ARKADEMY BOOTCAMP</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <p><a type="button" class="btn btn-xs btn-warning pull-right" data-toggle="modal"
+                data-target="#myModalAdd">ADD</a></p>
+        <br>
+        <table class="table table-bordered">
+            <thead>
+                <tr class="active">
+                    <th>Name</th>
+                    <th>Hobby</th>
+                    <th>Category</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>
+                        <button class="btn btn-link" data-toggle="modal" data-target="#myModalDel">
+                            <span class="glyphicon glyphicon-trash" style="color: red"></span>
+                        </button>
+                        <button class="btn btn-link" data-toggle="modal" data-target="#myModalEdit">
+                            <span class="glyphicon glyphicon-edit" style="color: green"></span>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td>
+                        <button class="btn btn-link" data-toggle="modal" data-target="#myModalDel">
+                            <span class="glyphicon glyphicon-trash" style="color: red"></span>
+                        </button>
+                        <button class="btn btn-link" data-toggle="modal" data-target="#myModalEdit">
+                            <span class="glyphicon glyphicon-edit" style="color: green"></span>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal Add -->
+    <div class="modal fade" id="myModalAdd" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">ADD DATA</h4>
+                </div>
+                <form action="#">
+                    <div class="modal-body">
+                        <center>
+                            <div class="form-group">
+                                <p><input type="text" class="form-control" id="usr" placeholder="Name..."></p>
+                                <p><select class="form-control" id="sel1" >
+                                        <option disabled selected>Hobby...</option>
+                                        <option>Koleksi Tas</option>
+                                        <option>InstaStory</option>
+                                    </select></p>
+                                <p><select class="form-control" id="sel1" >
+                                        <option disabled selected>Category...</option>
+                                        <option>Shopping</option>
+                                        <option>Media Sosial</option>
+                                    </select></p><br>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-warning">ADD</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Edit -->
+    <div class="modal fade" id="myModalEdit" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">EDIT DATA</h4>
+                </div>
+                <form action="#">
+                    <div class="modal-body">
+                        <center>
+                            <div class="form-group">
+                                <p><input type="text" class="form-control" id="usr" placeholder="Name..."></p>
+                                <p><select class="form-control" id="sel1" >
+                                        <option disabled selected>Hobby...</option>
+                                        <option>Koleksi Tas</option>
+                                        <option>InstaStory</option>
+                                    </select></p>
+                                <p><select class="form-control" id="sel1" >
+                                        <option disabled selected>Category...</option>
+                                        <option>Shopping</option>
+                                        <option>Media Sosial</option>
+                                    </select></p>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-warning">EDIT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Delet -->
+    <div class="modal fade" id="myModalDel" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <center>
+                        <span class="glyphicon glyphicon-ok-circle" style="color: green"></span>
+                        <p>Data telah berhasil dihapus.</p>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

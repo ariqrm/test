@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p id="demo"></p>
+
+    <script>
+    var mydata = [
+        {
+            name: "muhammad ari",
+            age: 25,
+            address: "jl menganti wiyung 1 rt 2 rw 2 no 105 surabaya",
+            hobbies: ["bulutsngkid", "sepakbola", "membaca"],
+            is_married: false,
+            list_school: {
+                name: "YPM 1 Taman",
+                year_in: 2010,
+                year_out: 2013,
+                major: "TKJ"
+            },
+            skills: {
+                skill_name: ["php", "Nodejs", "vue", "laravel"],
+                level: ["Beginner", "advance", "expert"]
+            },
+            interest_in_coding: true
+
+        }
+    ];
+    var myJSON = JSON.stringify(mydata);
+    console.log(myJSON);
+        document.getElementById("demo").innerHTML = myJSON;
+    </script>
+
+</body>
+
+</html>

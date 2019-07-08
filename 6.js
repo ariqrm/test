@@ -1,0 +1,1 @@
+console.log("saklar tidak berfungsi karena kesalahan staff");
